@@ -25,6 +25,7 @@ pipeline {
                 DockerBuild(BUILD_NUMBER, username, password) 
               }
             }
+          }
         }
     }
 }
