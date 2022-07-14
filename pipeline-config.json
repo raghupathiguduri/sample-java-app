@@ -1,6 +1,6 @@
 {
    "appName":"java-test",
    "version":"2.0",
-   "runTests":"false",
+   "runTests":"true",
    "Containerization":"true"
 }
