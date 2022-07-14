@@ -14,8 +14,9 @@ pipeline {
         }
         stage('Build App') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'nexus', usernameVariable: 'username', passwordVariable: 'password')])
+                withCredentials([usernamePassword(credentialsId: 'nexus', usernameVariable: 'username', passwordVariable: 'password')]){
                 mvnBuild()
+                }
             }
         }
     }
